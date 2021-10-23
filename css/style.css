@@ -4,4 +4,26 @@ body
     font-family: Arial, sans-serif;
     color: gold;
     background-color: #333;
+    font-size: 2em;
+}
+
+
+.bloc
+{
+    margin-top: 80px;
+}
+
+.bloc__title
+{
+    display: inline-block;
+    border-bottom: 4px solid gold;
+    padding-bottom: 4px;
+}
+
+.bloc__paragraph
+{
+    color: #fff;
+    text-align: justify;
+    padding: 0 100px;
+    margin: 2em 0;
 }
