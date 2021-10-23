@@ -27,3 +27,54 @@ body
     padding: 0 100px;
     margin: 2em 0;
 }
+
+.cabecera
+{
+    width: 70%;
+    margin: 80px auto;
+    padding: 20px 40px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.cabecera__titulo
+{
+    font-size: 3em;
+    background-color: gold;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.cabecera__subtitulo
+{
+    margin-top: -50px;
+    font-size: 1.5em;
+    color: gold;
+}
+
+.cabecera__parrafo
+{
+    text-align: justify;
+    color: #444;
+}
+
+.cabecera__boton
+{
+    padding: 15px 30px;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: gold;
+    color: #fff;
+    border-style: none;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.cabecera__boton:hover
+{
+    background-color: goldenrod;
+}
