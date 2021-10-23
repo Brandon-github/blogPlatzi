@@ -2,11 +2,7 @@ body
 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-<<<<<<< HEAD
-    color: white;
-=======
     color: blue;
->>>>>>> cabecera
     background-color: #333;
     font-size: 2em;
 }
@@ -20,11 +16,7 @@ body
 .bloc__title
 {
     display: inline-block;
-<<<<<<< HEAD
     border-bottom: 4px solid white;
-=======
-    border-bottom: 4px solid blue;
->>>>>>> cabecera
     padding-bottom: 4px;
 }
 
