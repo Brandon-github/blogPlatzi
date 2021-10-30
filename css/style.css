@@ -147,6 +147,21 @@ body
     font-size: 2em;
 }
 
+.blog__image
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image
+{
+    width: 100%;
+    height: 100%;
+}
+
 .tarjeta
 {
     background-color: var(--second-color);
