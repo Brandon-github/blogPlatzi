@@ -250,7 +250,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-alt);
     color: var(--text-color-alt);
     font-size: 1.2em;
     font-weight: 500;
