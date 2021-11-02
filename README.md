@@ -347,6 +347,6 @@ git clean -f
 * Uso de un nuevo comando
 * Modificacion de archivos
 * Trabajar con repositorios
-
+* Ejemplos para lixus y windows
 
 
