@@ -333,13 +333,28 @@ git clean --dry-run
 git clean -f 
 ```
 
-### **Traer commits viejos**
+### **Traer commits viejos - check-pick**
 ```javascript
 git cherry-pick Tag_commit
 ```
 > Nos traemos el commit con el tag definido, con esto podemos cojer el commit de otra rama y volverlo como si hubiera sido hecho por nuestra rama.
 > Por ejemplo si tenemos la rama **main** y queremos traernos un commit de la rama **xyz** usamos el comando **cherry-pick** al hacer esto el commit definido por su **Tag** dejara de ser el commit de la rama **xyz** si no que sera el commit de la rama **main**
 > - **ES UNA MUY MALA PRACTICA**
+
+### **Reconstruir commits - amend**
+```javascript
+git commit --amend
+```
+> Reconstruir un commit agregando los cambios actuales al ultimo commit realizado anterioirmente
+> - **ESTO ES UNA MUY MALA PRACTICA**
+
+> Por ejemplo si realizamos un commit para la modificacion del header con el siguiente mensaje **Modificacion de estructura y estilos del header** e imaginemos que me olvide de agregarle los estilos 
+
+**IMPORTANTE**
+> Usar el comando despues del guardar los cambios con el comando 
+```javascript
+git add 
+```
 
 ## Pull request
 
@@ -349,5 +364,375 @@ git cherry-pick Tag_commit
 
 > De esta forma la persona que quiere fusionar su rama con la principal tenga que esperar 
 > una **CONFIRMACION** del dueño del repositorio o **PETICION_DE_CAMBIOS** para confirmar el merge
+
+<h2 align="center" 
+    style="
+    margin-top: 40px;
+    font-size: 2em;
+    width: 100%;
+    padding: 20px;
+    background-color: #05f;
+    font-weight: 700;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0"
+    >
+    Resumen de comandos
+</h2>
+<p  align="justify" 
+    style="
+    font-size: 1.5em;
+    background:#02f;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;"
+    >
+    Este el mi resumen de todos los comandos planteado y aprendidos sus usos, sus ventajas, desventajas y sus diferentes usos que se le puede dar a cada uno de ellos y sus variaciones.
+    <ul 
+    style="
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;">
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="iniciar proyecto">git init</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="agregar cambios">git add</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="guardar cambios">git commit</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="ver estado de cambios">git status</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="eliminar archivos agregado">git rm</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="configurar git">git config</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="ver commits del repositorio">git log</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="ver cambios del codigo">git show</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="comparar cambios del codigo">git diff</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="volver en el tiempo">git reset</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="cambioar de rama y version">git checkout</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="ramas">git branch</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="fusionar ramas">git merge</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="agregar repositorio remoto">git remote</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="subir cambios al repositorio remoto">git push</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="actualizar datos con los del repositorio remoto">git pull</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="crear alias para comando">alias</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="crear etiqueta de version">git tag</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="clonar repositorio">git clone</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="ajustar commits de ramas">git rebase</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="guardar cambios temporalmente">git stash</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="limpiar archivos">git clean</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="traer commits de una rama a otra">git cherry-pick</li>
+        <li 
+        style="
+        box-sizing: border-box;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(#01f,#02f);
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 20px;
+        margin: 5px auto;
+        border-radius: 10px;
+        cursor: pointer;"
+        title="remendar un commit con el anterior">git commit --ament</li>
+    </ul>
+</p>
 
 
