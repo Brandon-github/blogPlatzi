@@ -388,6 +388,7 @@ git add
     border-radius: 0 0 20px 20px;"
     >
     Este el mi resumen de todos los comandos planteado y aprendidos sus usos, sus ventajas, desventajas y sus diferentes usos que se le puede dar a cada uno de ellos y sus variaciones.
+    Si colocas el cursor ensima de cada commando a continuacion veras una pequeña y muy resumida descripcion de lo que hace el comando en pocas palabras.
     <ul 
     style="
     box-sizing: border-box;
@@ -731,7 +732,7 @@ git add
         margin: 5px auto;
         border-radius: 10px;
         cursor: pointer;"
-        title="remendar un commit con el anterior">git commit --ament</li>
+        title="remendar un commit con el anterior">git commit --amend</li>
     </ul>
 </p>
 
