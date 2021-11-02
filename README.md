@@ -356,6 +356,31 @@ git commit --amend
 git add 
 ```
 
+## **Buscar palabras en el proyecto**
+### **Buscar palabra definida(codigo)**
+```javascript
+git grep Palabra
+```
+> Buscar en todos los archivos del repositorio en el codigo cuantas veses se encuentra la palabra definida y en donde poniendo de un color diferente las igualdades encontradas
+
+### **Buscar palabra definida(codigo, linea definida)**
+```javascript
+git grep -n Palabra
+```
+> Buscar en todos los archivos del repositorio en el codigo cuantas veses, en que linea  se encuentra la palabra definida y en donde poniendo de un color diferente las igualdades encontradas
+
+### **Buscar palabra definida(archivo, numero de veses)**
+```javascript
+git grep -c Palabra
+```
+> Buscar en todos los archivos del repositorio en el codigo cuantas veses se encuentra, archivo en que se encuentra y numero de veses que se encuentran en el archivo la palabra definida y en donde poniendo de un color diferente las igualdades encontradas
+
+## **Buscar palabra en los commits**
+```javascript
+git log -S Palabra
+```
+> Buscar todos los commits que contienen la palabra definida en su mensaje
+
 ## Pull request
 
 > Para subir cambios al fusionar a la rama principal por ejemplo **main** usando **PULL REQUEST**.
