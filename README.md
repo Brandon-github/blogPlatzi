@@ -343,5 +343,10 @@ git clean -f
 > De esta forma la persona que quiere fusionar su rama con la principal tenga que esperar 
 > una **CONFIRMACION** del dueño del repositorio o **PETICION_DE_CAMBIOS** para confirmar el merge
 
+## Cambios temporales - platzi
+* Uso de un nuevo comando
+* Modificacion de archivos
+* Trabajar con repositorios
+
 
 
