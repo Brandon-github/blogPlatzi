@@ -7,7 +7,6 @@
 
 ```javascript
 git init
-
 ```
 
 ## **Agregar archivos al repositorio - add**
@@ -334,21 +333,21 @@ git clean --dry-run
 git clean -f 
 ```
 
+### **Traer commits viejos**
+```javascript
+git cherry-pick Tag_commit
+```
+> Nos traemos el commit con el tag definido, con esto podemos cojer el commit de otra rama y volverlo como si hubiera sido hecho por nuestra rama.
+> Por ejemplo si tenemos la rama **main** y queremos traernos un commit de la rama **xyz** usamos el comando **cherry-pick** al hacer esto el commit definido por su **Tag** dejara de ser el commit de la rama **xyz** si no que sera el commit de la rama **main**
+> - **ES UNA MUY MALA PRACTICA**
+
 ## Pull request
 
-> Para subir cambios al fusionar a la rama principal por ejemplo "main" usando **PULL REQUEST**.
-> Esto es una caracteristica de Github que permite que al fusionar una rama a la rama principal se tenga que llegar a confirmar la fusion o 'merge'
+> Para subir cambios al fusionar a la rama principal por ejemplo **main** usando **PULL REQUEST**.
+> Esto es una caracteristica de Github que permite que al fusionar una rama a la rama principal se tenga que llegar a confirmar la fusion o **merge**
 > por el dueño del repositorio y/o contricullentes(Con o sin acceso)
 
 > De esta forma la persona que quiere fusionar su rama con la principal tenga que esperar 
 > una **CONFIRMACION** del dueño del repositorio o **PETICION_DE_CAMBIOS** para confirmar el merge
-
-## Cambios temporales - platzi
-* Uso de un nuevo comando
-* Modificacion de archivos
-* Trabajar con repositorios
-
-* Ejemplos para lixus y windows
-* Disponible para todas las edades
 
 
